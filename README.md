@@ -39,6 +39,7 @@ $ git checkout <branchname>
 7.新建并切换分支
 ```objc
 $ git checkout -b <branchname>
+//当前分支的记录都会到新分支dev/app上
 例: $ git checkout -b dev/app
 ```
 
@@ -96,5 +97,15 @@ $ git commit –help
 
 17.添加远程仓库
 ```objc
-$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote add pb git://github.com/paulboone/ticgit.git
+```
+
+18.从远端仓库下载新分支与数据
+```objc
+$ git remote add pb git://github.com/paulboone/ticgit.git
+```
+
+19.添加远程仓库
+```objc
+$ git remote add pb git://github.com/paulboone/ticgit.git
 ```
