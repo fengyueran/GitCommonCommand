@@ -16,6 +16,7 @@ $ git remote
 3.推送到远程分支:
 ```objc
 $ git push <remote-name> <branch-name>
+// origin 为远程仓库名
 例: $ git push origin dev/IOS-Design-Patterns
 ```
 
@@ -97,15 +98,19 @@ $ git commit –help
 
 17.添加远程仓库
 ```objc
-$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote add pb git://github.com/paulboone/ticgit.git
 ```
 
 18.从远端仓库下载新分支与数据
 ```objc
-$ git remote add pb git://github.com/paulboone/ticgit.git
+//会使你与另一仓库同步，提取你本地所没有的数据，不merge
+$ git fetch 
+//将你的仓库与远端仓库alias同步，提取所有它独有的数据到本地分支以合并或者怎样。
+$ git fetch alias
 ```
 
-19.添加远程仓库
+19.从远端仓库提取数据并尝试合并到当前分支
 ```objc
-$ git remote add pb git://github.com/paulboone/ticgit.git
+//基本上，该命令就是在 git fetch 之后紧接着 git merge 远端分支到当前分支
+$ git pull
 ```
