@@ -98,7 +98,7 @@ $ git commit –help
 
 17.添加远程仓库
 ```objc
-$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote add pb git://github.com/paulboone/ticgit.git
 ```
 
 18.从远端仓库下载新分支与数据
@@ -113,15 +113,13 @@ $ git fetch alias
  如果本地不存在branch2分支, 则会自动创建一个新的branch2分支, 如果本地存在branch2分支, 
  并且是`fast forward', 则自动合并两个分支, 否则, 会阻止以上操作.
 $ git fetch origin branch1:branch2
-
-
-
 ```
 
 19.从远端仓库提取数据并尝试合并到当前分支
 ```objc
 //基本上，该命令就是在 git fetch 之后紧接着 git merge 远端分支到当前分支
 $ git pull 
+
 //衍合能产生一个更为整洁的提交历史
 $ git pull --rebase
 
