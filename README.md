@@ -25,6 +25,7 @@ $ git
 ```
 
 5.新建分支
+```objc
 $ git branch <branchname>
 例: $ git branch dev/app
 ```
@@ -95,5 +96,5 @@ $ git commit –help
 
 17.添加远程仓库
 ```objc
-$ git remote add pb git://github.com/paulboone/ticgit.git
+$ git remote add pb git://github.com/paulboone/ticgit.git
 ```
