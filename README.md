@@ -36,7 +36,7 @@ $ git branch -d <branchname>
 $ git config –list
 
 10.删除全局配置文件的用户名和邮箱
-$ git config --unset --global user.name "fengyueran"
+$ git config --unset --global user.name "fengyueran"
 $ git config --unset --global user.email 316032603@qq.com
 
 11.git 如何让单个文件回退到指定的版本
@@ -48,13 +48,17 @@ $ git reflog MainActivity.js
 12.合并分支$ git rebase master（将master分支合并到当前分支）
 $ git merge hotfix（将hotfix分支合并到当前分支）
 
-13.解决冲突                 
+13.解决冲突
 $ git mergetool -t kdiff3
-14. 合并提交历史           
-        $ git merge --squash hotfix
-15.追加到上一次提交                 
- $ git commit --amend
- 16.查看某个命令的帮助                
-  $ git commit –help
-  17.添加远程仓库       
-             $ git remote add pb git://github.com/paulboone/ticgit.git
+
+14.合并提交历史
+$ git merge --squash hotfix
+
+15.追加到上一次提交
+$ git commit --amend
+
+16.查看某个命令的帮助
+$ git commit –help
+
+17.添加远程仓库
+$ git remote add pb git://github.com/paulboone/ticgit.git
